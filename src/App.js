@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    // <> === <React.Fragment>, but the latter needs to be imported, as React, { Fragment }, then can also be used as <Fragment>
+    // <> === <React.Fragment>, it can also be used as <Fragment> but then needs to be imported, as React, { Fragment }
     <>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
