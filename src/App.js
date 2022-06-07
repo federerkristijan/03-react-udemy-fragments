@@ -16,10 +16,11 @@ function App() {
   };
 
   return (
-    <div>
+    // <> === <React.Fragment>, but the latter needs to be imported, as React, { Fragment }, then can also be used as <Fragment>
+    <>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
-    </div>
+    </>
   );
 }
 
